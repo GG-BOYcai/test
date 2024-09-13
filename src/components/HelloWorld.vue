@@ -5,7 +5,7 @@
       <template #icon><SearchOutlined /></template>
     </my-button>
 
-    <div @click="handleClick2" class="btn"></div>
+    <div @click="handleClick2" class="btn">btn2</div>
   </div>
 </template>
 

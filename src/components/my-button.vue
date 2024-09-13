@@ -1,10 +1,12 @@
 <template>
-  <div>{{ title }}:</div>
-  <a-button ref="buttonRef" v-bind="attrs">
-    <template #[slotName] v-for="(slot, slotName) in $slots">
-      <slot :name="slotName"></slot>
-    </template>
-  </a-button>
+  <div>
+    <div>{{ title }}:</div>
+    <a-button ref="buttonRef" v-bind="attrs">
+      <template #[slotName] v-for="(slot, slotName) in $slots">
+        <slot :name="slotName"></slot>
+      </template>
+    </a-button>
+  </div>
 </template>
 
 <script setup lang="ts">
